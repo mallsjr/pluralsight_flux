@@ -1,0 +1,19 @@
+TODO:
+    ☐ Understand JSON Server and the module configuration
+    ☐ Understand Node import exports verses ES6 import exports
+    ☐ Review code and try to get better understanding 
+        ☐ Review comments
+        ✔ Course assessment @done(20-04-27 15:35)
+    
+
+
+    Challenges:
+        ✔ 404 page for bogus slug @done(20-04-29 12:37)
+        ✔ display author name on CoursesPage @done(20-04-29 17:51)
+        ✔ Populate author dropdown via api data @done(20-04-30 13:21)
+        ☐ create reusable dropdown comp
+        ☐ add author management
+        ☐ Building apps with React and Redux
+        ☐ Deployment
+            ☐ Github pages 
+            ☐ heroku
