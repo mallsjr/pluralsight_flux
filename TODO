@@ -11,9 +11,9 @@ TODO:
         ✔ 404 page for bogus slug @done(20-04-29 12:37)
         ✔ display author name on CoursesPage @done(20-04-29 17:51)
         ✔ Populate author dropdown via api data @done(20-04-30 13:21)
-        ☐ create reusable dropdown comp
+        ✔ create reusable dropdown comp @done(20-04-30 16:14)
         ☐ add author management
         ☐ Building apps with React and Redux
-        ☐ Deployment
+        ✔ Deployment @done(20-04-30 14:34)
             ☐ Github pages 
-            ☐ heroku
+            ✔ heroku @done(20-04-30 14:34)

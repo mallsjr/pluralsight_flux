@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TextInput from './common/TextInput';
+import SelectInput from './common/SelectInput';
 import PropTypes from 'prop-types';
 import authorStore from '../stores/authorStore';
 import { loadAuthors } from '../actions/authorActions';
@@ -31,28 +32,15 @@ function CourseForm(props) {
       />
 
       {/* Creat reuseable select component as exercise */}
-      <div className="form-group">
-        <label htmlFor="author">Author</label>
-        <div className="field">
-          <select
-            id="author"
-            name="authorId"
-            onChange={props.onChange}
-            value={props.course.authorId || ''}
-            className="form-control"
-          >
-            <option value="" />
-            {authors.map(author => (
-              <option key={author.id} value={author.id}>
-                {author.name}
-              </option>
-            ))}
-          </select>
-        </div>
-        {props.errors.authorId && (
-          <div className="alert alert-danger">{props.errors.authorId}</div>
-        )}
-      </div>
+      <SelectInput
+        id="author"
+        name="authorId"
+        label="Author"
+        onChange={props.onChange}
+        value={props.course.authorId || ' '}
+        error={props.errors.authorId}
+        authors={authors}
+      />
 
       <TextInput
         id="category"
